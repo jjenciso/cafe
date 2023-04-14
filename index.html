@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wave Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- BACKGROUND -->
+    <video autoplay muted loop id="background">
+      <source src="/video/wave-cafe-video-bg.mp4" type="video/mp4" />
+    </video>
+    <button id="playButton"><i class="fa-solid fa-play"></i></button>
+    <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
+    <!-- CONTENTS -->
+
+    <main class="main_container">
+        <div class="left_container">
+            <div class="logo_container">
+                <h1><i class="fa-solid fa-mug-saucer"></i>Wave Cafe</h1>
+            </div>
+            <div class="container_container">
+                <div class="container drink_menu"><h2><i class="fa-solid fa-mug-hot"></i>Drink Menu</h2></div>
+                <div class="container special_items"><h2><i class="fa-solid fa-martini-glass"></i>Special Items</h2></div>
+                <div class="container about"><h2><i class="fa-solid fa-people-group"></i>About Us</h2></div>
+                <div class="container contact"><h2><i class="fa-solid fa-comment"></i>Contact</h2></div>
+            </div>
+        </div>
+        <div class="right_container"></div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0;
+  color: #fff;
+}
+
+.main_container {
+  position: relative;
+  z-index: 1;
+  margin: 3rem;
+}
+.main_container .left_container {
+  width: 30vw;
+  height: auto;
+}
+.main_container .left_container .logo_container {
+  background-color: #fff;
+  height: 10rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 4.5rem;
+  font-style: oblique;
+  color: #088f8f;
+}
+.main_container .left_container .logo_container i {
+  margin-right: 2rem;
+}
+.main_container .left_container .container_container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.main_container .left_container .container_container .container {
+  background-color: #fff;
+  height: 7rem;
+  text-align: center;
+  color: #088f8f;
+  cursor: pointer;
+}
+.main_container .left_container .container_container .container h2 {
+  padding-top: 2.5rem;
+}
+.main_container .left_container .container_container .container h2 i {
+  margin-right: 1rem;
+}
+.main_container .left_container .container_container .container:hover {
+  background-color: #088f8f;
+  color: #fff;
+}
+.main_container .left_container .container_container .active {
+  background-color: #088f8f;
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,106 @@
+$primary-color: #088f8f;
+$background-primary: #fff;
+$background-secondary: rgba(0, 0, 0, 0.6);
+$transition: 500ms ease;
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+// PLAY-PAUSE BUTTONS ----->
+button {
+    position: fixed;
+    bottom: 1rem;
+    right:  1rem;
+    z-index: 2;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $background-secondary;
+    border: 0;
+    color: $background-primary;
+}
+
+// MAIN CONTAINER ----->
+
+.main_container {
+    position: relative;
+    z-index: 1;
+    margin: 3rem;
+   
+
+    // LEFT CONTAINER ----->
+    .left_container {
+        width: 30vw;
+        height: auto;
+
+        // LOGO CONTAINER ----->
+        .logo_container {
+            background-color: $background-primary;
+            height: 10rem;
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 4.5rem;
+            font-style: oblique;
+            color: $primary-color;
+
+            i {
+                margin-right: 2rem;
+            }
+        }
+
+        // CONTAINER CONTAINER ----->
+        .container_container {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+
+            .container {
+                background-color: $background-primary;
+                height: 7rem;
+                text-align: center;
+                color: $primary-color;
+                cursor: pointer;
+
+                h2 {
+                    padding-top: 2.5rem;
+
+
+                    i {
+                        margin-right: 1rem;
+                    }
+
+                }
+
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: $background-primary;   
+                }
+            }
+
+            .active {
+                background-color: $primary-color;
+                color: $background-primary; 
+            }
+        }
+    }
+}
