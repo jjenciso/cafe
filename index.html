@@ -20,23 +20,96 @@
     <video autoplay muted loop id="background">
       <source src="/video/wave-cafe-video-bg.mp4" type="video/mp4" />
     </video>
-    <button id="playButton"><i class="fa-solid fa-play"></i></button>
-    <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
+    <button class="pausePlay play"><i class="fa-solid fa-play"></i></button>
+    <button class="pausePlay pause"><i class="fa-solid fa-pause"></i></button>
     <!-- CONTENTS -->
 
     <main class="main_container">
-        <div class="left_container">
-            <div class="logo_container">
-                <h1><i class="fa-solid fa-mug-saucer"></i>Wave Cafe</h1>
-            </div>
-            <div class="container_container">
-                <div class="container drink_menu"><h2><i class="fa-solid fa-mug-hot"></i>Drink Menu</h2></div>
-                <div class="container special_items"><h2><i class="fa-solid fa-martini-glass"></i>Special Items</h2></div>
-                <div class="container about"><h2><i class="fa-solid fa-people-group"></i>About Us</h2></div>
-                <div class="container contact"><h2><i class="fa-solid fa-comment"></i>Contact</h2></div>
-            </div>
+      <div class="left_container">
+        <div class="logo_container">
+          <h1><i class="fa-solid fa-mug-saucer"></i>Wave Cafe</h1>
         </div>
-        <div class="right_container"></div>
+        <div class="container_container">
+          <button class="drink_menu">
+            <h2><i class="fa-solid fa-mug-hot"></i>Drink Menu</h2>
+          </button>
+          <button class="special_items">
+            <h2><i class="fa-solid fa-martini-glass"></i>Special Items</h2>
+          </button>
+          <button class="about">
+            <h2><i class="fa-solid fa-people-group"></i>About Us</h2>
+          </button>
+          <button class="contact">
+            <h2><i class="fa-solid fa-comment"></i>Contact</h2>
+          </button>
+        </div>
+      </div>
+      <div class="right_container">
+        <div class="drink_menu">
+          <ul class="drink_types">
+            <li class="iced"><a href="#">Iced Coffee</a></li>
+            <li class="hot"><a href="#">Hot Coffee</a></li>
+            <li class="fruit"><a href="#">Fruit Juice</a></li>
+          </ul>
+          
+            <div class="drink_container iced">
+              <div class="image">
+                <div><img src="/image/iced-americano.png" alt="" /></div>
+                <div><img src="/image/iced-cappuccino.png" alt="" /></div>
+                <div><img src="/image/iced-espresso.png" alt="" /></div>
+                <div><img src="/image/iced-latte.png" alt="" /></div>
+              </div>
+              <div class="info">
+                <div class="item">
+                  <div class="item_info">
+                    <div class="name"><h2>Iced Americano</h2></div>
+                    <div class="price"><h2>$10.25</h2></div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
+                  </p>
+                </div>
+                <div class="item">
+                  <div class="item_info">
+                    <div class="name"><h2>Iced Cappucino</h2></div>
+                    <div class="price"><h2>$10.25</h2></div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
+                  </p>
+                </div>
+                <div class="item">
+                  <div class="item_info">
+                    <div class="name"><h2>Iced Espresso</h2></div>
+                    <div class="price"><h2>$10.25</h2></div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
+                  </p>
+                </div>
+                <div class="item">
+                  <div class="item_info">
+                    <div class="name"><h2>Iced Latte</h2></div>
+                    <div class="price"><h2>$10.25</h2></div>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hot"></div>
+            <div class="fruit"></div>
+          </div>
+        <div class="special_items"><a href="#">Give me all you got</a></div>
+        <div class="about"><a href="#">Give me all you got</a></div>
+        <div class="contact"><a href="#">Give me all you got</a></div>
+      </div>
     </main>
 
     <script src="index.js"></script>

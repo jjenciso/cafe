@@ -10,6 +10,7 @@ body {
   outline: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 #background {
@@ -20,7 +21,7 @@ body {
   min-height: 100%;
 }
 
-button {
+.pausePlay {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -33,12 +34,17 @@ button {
 }
 
 .main_container {
+  width: 85vw;
+  height: auto;
   position: relative;
   z-index: 1;
   margin: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15vw;
 }
 .main_container .left_container {
-  width: 30vw;
+  width: 35rem;
   height: auto;
 }
 .main_container .left_container .logo_container {
@@ -59,24 +65,107 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
-.main_container .left_container .container_container .container {
+.main_container .left_container .container_container button {
   background-color: #fff;
   height: 7rem;
   text-align: center;
   color: #088f8f;
-  cursor: pointer;
+  border: 0;
 }
-.main_container .left_container .container_container .container h2 {
-  padding-top: 2.5rem;
+.main_container .left_container .container_container button h2 {
+  padding-top: 8px;
 }
-.main_container .left_container .container_container .container h2 i {
+.main_container .left_container .container_container button h2 i {
   margin-right: 1rem;
 }
-.main_container .left_container .container_container .container:hover {
+.main_container .left_container .container_container button:hover {
   background-color: #088f8f;
   color: #fff;
 }
 .main_container .left_container .container_container .active {
   background-color: #088f8f;
   color: #fff;
+}
+.main_container .right_container {
+  width: 45rem;
+  height: auto;
+  position: relative;
+}
+.main_container .right_container .drink_menu {
+  width: 45rem;
+  height: auto;
+  display: block;
+}
+.main_container .right_container .drink_menu .drink_types {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+.main_container .right_container .drink_menu .drink_types li {
+  width: 14rem;
+  text-align: center;
+}
+.main_container .right_container .drink_menu .drink_types li a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: 500ms ease;
+}
+.main_container .right_container .drink_menu .drink_types li a:hover {
+  color: #088f8f;
+  -webkit-text-decoration: underline 3px #088f8f;
+          text-decoration: underline 3px #088f8f;
+}
+.main_container .right_container .drink_menu .drink_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main_container .right_container .drink_menu .drink_container .image {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main_container .right_container .drink_menu .drink_container .info {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main_container .right_container .drink_menu .drink_container .info .item {
+  width: 23vw;
+  height: 9vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem;
+}
+.main_container .right_container .drink_menu .drink_container .info .item .item_info {
+  display: flex;
+  justify-content: space-between;
+}
+.main_container .right_container .drink_menu .drink_container .info .item .item_info .price {
+  color: #088f8f;
+}
+.main_container .right_container .drink_menu .drink_container .info .item p {
+  margin-top: 2rem;
+}
+.main_container .right_container .special_items {
+  width: 45rem;
+  height: auto;
+  background-color: #000;
+  display: none;
+}
+.main_container .right_container .about {
+  width: 45rem;
+  height: auto;
+  background-color: #088f8f;
+  display: none;
+}
+.main_container .right_container .contact {
+  width: 45rem;
+  height: auto;
+  background-color: blue;
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

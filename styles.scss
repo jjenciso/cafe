@@ -15,7 +15,9 @@ body {
     outline: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
+
 
 #background {
     position: fixed;
@@ -26,7 +28,7 @@ body {
 }
 
 // PLAY-PAUSE BUTTONS ----->
-button {
+.pausePlay {
     position: fixed;
     bottom: 1rem;
     right:  1rem;
@@ -41,14 +43,20 @@ button {
 // MAIN CONTAINER ----->
 
 .main_container {
+    width: 85vw;
+    height: auto;
     position: relative;
     z-index: 1;
     margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15vw;
+    
    
 
     // LEFT CONTAINER ----->
     .left_container {
-        width: 30vw;
+        width: 35rem;
         height: auto;
 
         // LOGO CONTAINER ----->
@@ -73,15 +81,16 @@ button {
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
 
-            .container {
+            button {
                 background-color: $background-primary;
                 height: 7rem;
                 text-align: center;
                 color: $primary-color;
-                cursor: pointer;
+                border: 0;
+                
 
                 h2 {
-                    padding-top: 2.5rem;
+                    padding-top: 8px;
 
 
                     i {
@@ -103,4 +112,112 @@ button {
             }
         }
     }
+// END OF LEFT CONTAINER ----->
+// RIGHT CONTAINER ----->
+    .right_container {
+        // background-color: orange;
+        width: 45rem;
+        height: auto;
+        position: relative;
+
+        .drink_menu {
+            width: 45rem;
+            height: auto;
+            display: block;
+
+            .drink_types {
+                background-color: $background-secondary;
+                color: $background-primary;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 5rem;
+
+                li {
+                    width: 14rem;
+                    text-align: center;
+    
+                    a {
+                        color: #fff;
+                        font-size: 1.4rem;
+                        transition: $transition;
+                        
+                        
+    
+                        &:hover {
+                            color: $primary-color;
+                            text-decoration: underline 3px $primary-color;
+                        }
+                    }
+                    
+                }
+            }
+              // DRINK CONTAINER ----->
+              .drink_container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                
+
+                .image {
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+
+                .info {
+                    margin-top: 1.8rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+                    .item {
+                        width: 23vw;
+                        height: 9vw;
+                        background-color: $background-secondary;
+                        color: $background-primary;
+                        padding: 1rem;
+
+                        .item_info {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .price {
+                                color: $primary-color;
+                            }
+                        }
+
+                        p {
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+              }
+            // DRINK CONTAINER ----->
+        }
+
+        // END OF DRINK MENU ----->
+        .special_items {
+            width: 45rem;
+            height: auto;
+            background-color: #000;
+            display: none;
+        }
+
+        .about {
+            width: 45rem;
+            height: auto;
+            background-color: #088f8f;
+            display: none;
+        }
+
+        .contact {
+            width: 45rem;
+            height: auto;
+            background-color: blue;
+            display: none;
+        }
+    }
+
+// END OF RIGHT CONTAINER ----->
 }
