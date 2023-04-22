@@ -14,103 +14,62 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- CONTENTS -->
+    <div class="main-container">
+      <div class="container-row">
+        <div class="left">
+          <div class="logo-container">
+            <h1>
+              <i class="fa-solid fa-mug-saucer tab-link-logo"></i><span>Wave Cafe</span>
+            </h1>
+          </div>
+          <div class="tab-links-container">
+            <ul>
+              <li class="tab-links">
+                <a href="#"
+                  ><i class="fa-solid fa-mug-hot tab-link-logo"></i><span>Drink Menu</span></a
+                >
+              </li>
+              <li class="tab-links">
+                <a href="#"
+                  ><i class="fa-solid fa-people-group tab-link-logo"></i
+                  ><span>About Us</span></a
+                >
+              </li>
+              <li class="tab-links">
+                <a href="#"
+                  ><i class="fa-solid fa-martini-glass tab-link-logo"></i
+                  ><span>Special Items</span></a
+                >
+              </li>
+              <li class="tab-links">
+                <a href="#"
+                  ><i class="fa-solid fa-comments tab-link-logo"></i
+                  ><span>Contact Us</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+
     <!-- BACKGROUND -->
-    <video autoplay muted loop id="background">
+    <video autoplay muted loop id="background" class="video-bg">
       <source src="/video/wave-cafe-video-bg.mp4" type="video/mp4" />
     </video>
-    <button class="pausePlay play"><i class="fa-solid fa-play"></i></button>
-    <button class="pausePlay pause"><i class="fa-solid fa-pause"></i></button>
-    <!-- CONTENTS -->
-
-    <main class="main_container">
-      <div class="left_container">
-        <div class="logo_container">
-          <h1><i class="fa-solid fa-mug-saucer"></i>Wave Cafe</h1>
-        </div>
-        <div class="container_container">
-          <button class="drink_menu">
-            <h2><i class="fa-solid fa-mug-hot"></i>Drink Menu</h2>
-          </button>
-          <button class="special_items">
-            <h2><i class="fa-solid fa-martini-glass"></i>Special Items</h2>
-          </button>
-          <button class="about">
-            <h2><i class="fa-solid fa-people-group"></i>About Us</h2>
-          </button>
-          <button class="contact">
-            <h2><i class="fa-solid fa-comment"></i>Contact</h2>
-          </button>
-        </div>
-      </div>
-      <div class="right_container">
-        <div class="drink_menu">
-          <ul class="drink_types">
-            <li class="iced"><a href="#">Iced Coffee</a></li>
-            <li class="hot"><a href="#">Hot Coffee</a></li>
-            <li class="fruit"><a href="#">Fruit Juice</a></li>
-          </ul>
-          
-            <div class="drink_container iced">
-              <div class="image">
-                <div><img src="/image/iced-americano.png" alt="" /></div>
-                <div><img src="/image/iced-cappuccino.png" alt="" /></div>
-                <div><img src="/image/iced-espresso.png" alt="" /></div>
-                <div><img src="/image/iced-latte.png" alt="" /></div>
-              </div>
-              <div class="info">
-                <div class="item">
-                  <div class="item_info">
-                    <div class="name"><h2>Iced Americano</h2></div>
-                    <div class="price"><h2>$10.25</h2></div>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
-                  </p>
-                </div>
-                <div class="item">
-                  <div class="item_info">
-                    <div class="name"><h2>Iced Cappucino</h2></div>
-                    <div class="price"><h2>$10.25</h2></div>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
-                  </p>
-                </div>
-                <div class="item">
-                  <div class="item_info">
-                    <div class="name"><h2>Iced Espresso</h2></div>
-                    <div class="price"><h2>$10.25</h2></div>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
-                  </p>
-                </div>
-                <div class="item">
-                  <div class="item_info">
-                    <div class="name"><h2>Iced Latte</h2></div>
-                    <div class="price"><h2>$10.25</h2></div>
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-                    debitis, autem nobis numquam esse dignissimos assumenda? Id!
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="hot"></div>
-            <div class="fruit"></div>
-          </div>
-        <div class="special_items"><a href="#">Give me all you got</a></div>
-        <div class="about"><a href="#">Give me all you got</a></div>
-        <div class="contact"><a href="#">Give me all you got</a></div>
-      </div>
-    </main>
+    <button class="pause-play play"><i class="fa-solid fa-play"></i></button>
+    <button class="pause-play pause"><i class="fa-solid fa-pause"></i></button>
 
     <script src="index.js"></script>
   </body>
