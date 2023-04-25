@@ -18,6 +18,11 @@ body {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .video-bg {
   position: fixed;
   top: 0;
@@ -37,6 +42,14 @@ body {
   width: 2rem;
 }
 
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.left, .right {
+  width: 50%;
+}
+
 .tab-link-logo {
   padding: 10px;
 }
@@ -53,7 +66,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 25rem;
-  color: #00FFFF;
 }
 .container-row .left .logo-container {
   background-color: #fff;
@@ -64,18 +76,62 @@ body {
   justify-content: center;
 }
 .container-row .left .tab-links-container ul {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-.container-row .left .tab-links-container ul .tab-links {
+.container-row .left .tab-links-container ul .page-links {
   background-color: #fff;
-  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 5rem;
+  color: #099;
+  transition: all 400ms ease;
 }
-.container-row .left .tab-links-container ul .tab-links a {
-  color: #00FFFF;
+.container-row .left .tab-links-container ul .page-links:hover, .container-row .left .tab-links-container ul .page-links .active {
+  background-color: #099;
+  color: #fff;
+}
+.container-row .right-container-main {
+  width: 33rem;
+}
+.container-row .right-container-main .drinks-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 2.2rem;
+}
+.container-row .right-container-main .drinks-nav ul .tab-link {
+  color: #fff;
+  transition: all 400ms ease-in-out;
+}
+.container-row .right-container-main .drinks-nav ul .tab-link:hover {
+  color: #099;
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
+}
+.container-row .right-container-main .list-item {
+  display: flex;
+  gap: 4rem;
+}
+.container-row .right-container-main .list-item .item-img {
+  margin-top: 2rem;
+}
+.container-row .right-container-main .list-item .list-item-info {
+  margin-top: 1.5rem;
+  height: 11.8rem;
+  padding: 10px;
+}
+.container-row .right-container-main .list-item .list-item-info .item-name {
+  display: flex;
+  justify-content: space-between;
+}
+.container-row .right-container-main .list-item .list-item-info .item-name .item-price {
+  color: #099;
+}
+.container-row .right-container-main .list-item .list-item-info .item-description {
+  margin-top: 1rem;
 }/*# sourceMappingURL=styles.css.map */

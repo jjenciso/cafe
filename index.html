@@ -29,30 +29,32 @@
         <div class="left">
           <div class="logo-container">
             <h1>
-              <i class="fa-solid fa-mug-saucer tab-link-logo"></i><span>Wave Cafe</span>
+              <i class="fa-solid fa-mug-saucer tab-link-logo"></i
+              ><span>Wave Cafe</span>
             </h1>
           </div>
           <div class="tab-links-container">
             <ul>
-              <li class="tab-links">
-                <a href="#"
-                  ><i class="fa-solid fa-mug-hot tab-link-logo"></i><span>Drink Menu</span></a
+              <li class="tab-page-links">
+                <a href="#drinks" class="page-links .active"
+                  ><i class="fa-solid fa-mug-hot tab-link-logo"></i
+                  ><span>Drink Menu</span></a
                 >
               </li>
-              <li class="tab-links">
-                <a href="#"
+              <li class="tab-page-links">
+                <a href="#about" class="page-links"
                   ><i class="fa-solid fa-people-group tab-link-logo"></i
                   ><span>About Us</span></a
                 >
               </li>
-              <li class="tab-links">
-                <a href="#"
+              <li class="tab-page-links">
+                <a href="#special" class="page-links"
                   ><i class="fa-solid fa-martini-glass tab-link-logo"></i
                   ><span>Special Items</span></a
                 >
               </li>
-              <li class="tab-links">
-                <a href="#"
+              <li class="tab-page-links">
+                <a href="#contact" class="page-links"
                   ><i class="fa-solid fa-comments tab-link-logo"></i
                   ><span>Contact Us</span></a
                 >
@@ -60,7 +62,243 @@
             </ul>
           </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+          <main class="right-container-main">
+            <div id="drinks" class="page-contents">
+              <nav class="black-bg drinks-nav">
+                <ul>
+                  <li>
+                    <a href="#" class="tab-link active" data-id="cold">Iced Coffee</a>
+                  </li>
+                  <li>
+                    <a href="#" class="tab-link" data-id="hot">Hot Coffee</a>
+                  </li>
+                  <li>
+                    <a href="#" class="tab-link" data-id="juice">Fruit Juice</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- END OF DRINK NAVIGATION -->
+              <div id="cold" class="tab-content">
+                <div class="tab-list">
+                  <div class="list-item">
+                    <img
+                      src="/image/iced-americano.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Iced Americano <span class="item-price">$10.25</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iste quam minima illo, dignissimos maxime ipsum
+                        non incidunt.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/iced-cappuccino.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Iced Cappuccino <span class="item-price">$12.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iste quam minima illo, dignissimos maxime ipsum
+                        non incidunt.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/iced-espresso.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Iced Espresso <span class="item-price">$14.25</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iste quam minima illo, dignissimos maxime ipsum
+                        non incidunt.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/iced-latte.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Iced Latte <span class="item-price">$11.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iste quam minima illo, dignissimos maxime ipsum
+                        non incidunt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="hot" class="tab-content">
+                <div class="tab-list">
+                  <div class="list-item">
+                    <img
+                      src="/image/hot-americano.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Hot Americano <span class="item-price">$8.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/hot-cappuccino.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Hot Cappuccino <span class="item-price">$9.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/hot-espresso.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Hot Espresso <span class="item-price">$7.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/hot-latte.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Hot Latte <span class="item-price">$6.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="juice" class="tab-content">
+                <div class="tab-list">
+                  <div class="list-item">
+                    <img
+                      src="/image/smoothie-1.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Strawberry Smoothie <span class="item-price">$12.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/smoothie-2.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Red Berry Smoothie <span class="item-price">$14.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/smoothie-3.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Pineapple Smoothie <span class="item-price">$16.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <img
+                      src="/image/smoothie-4.png"
+                      alt="image"
+                      class="item-img"
+                    />
+                    <div class="black-bg list-item-info">
+                      <h3 class="item-name">
+                        Spinach Smoothie <span class="item-price">$18.50</span>
+                      </h3>
+                      <p class="item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga sint dignissimos quas consectetur voluptate est
+                        atque expedita.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END OF DRINK MENU -->
+            </div>
+          </main>
+        </div>
       </div>
     </div>
 
