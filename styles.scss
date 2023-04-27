@@ -21,6 +21,7 @@ img {
     height: 100%;
 }
 
+
 .video-bg {
     position: fixed;
     top: 0;
@@ -53,6 +54,7 @@ img {
 
     // LEFT >>>
     .left {
+        position: fixed;
         display: flex;
         flex-direction: column;
         width: 25rem;
@@ -80,18 +82,23 @@ img {
                height: 5rem;
                color: #099;
                transition: all 400ms ease;
-               &:hover,.active {
+               &:hover {
                 background-color: #099;
                 color: #fff;
                }
-              
             }
+            .active {
+                background-color: #099;
+                color: #fff;
+               }
         }
     }
     // END OF LEFT CONTAINER
     // RIGHT
 
     .right-container-main {
+        position: absolute;
+        right: 10rem;
         width: 33rem;
 
         .drinks-nav ul {
@@ -109,6 +116,10 @@ img {
                 text-decoration: underline 3px;
             }
            }
+           .active {
+            color: #099;
+            text-decoration: underline 3px;
+            }
         }
         .list-item {
             display: flex;
@@ -121,6 +132,7 @@ img {
                 height: 11.8rem;
                 padding: 10px;
                 .item-name {
+                    color: #fff;
                     display: flex;
                     justify-content: space-between;
                     .item-price {
@@ -129,8 +141,133 @@ img {
                 }
                 .item-description {
                     margin-top: 1rem;
+                    color: #fff;
                 }
             }
         }
+        // END OF DRINKS >>>
+        .about-info1 {
+            height: auto;
+            padding: 1rem 2rem 4rem 0;
+            .about-info1-title {
+                height: 4rem;
+                color: #099;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .about-info1-content {
+                display: flex;
+                gap: 2rem;
+                .about-info1-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    color: #fff;
+                }
+            }
+        }
+        // END OF ABOUT1 >>
+        .about-info2 {
+            height: auto;
+            padding: 4rem 2rem 4rem 2rem;
+            color: #fff;
+            margin-top: 2rem;
+            .about-info2-main {
+                display: flex;
+                gap: 2rem;
+                .about-info2-title {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    .info2-h2 {
+                        color: #099;
+                    }
+                }
+            }
+            .about-info2-lower-text {
+                margin-top: 2rem;
+            }
+        }
+         // END OF ABOUT2 >>
+         .special-item-container {
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .special-item {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .special-items-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    padding: 0 2rem 2rem 2rem;
+                    .special-item-name {
+                        color: #099;
+                    }
+                    .special-item-text {
+                        color: #fff;
+                    }
+                }
+            }
+         }
+        //  END OF SPECIAL ITEMS
+        .tm-contact-text-container {
+            padding: 3rem 2rem;
+            margin-bottom: 20px;    
+        }
+        
+        .tm-contact-form-container {
+            max-width: 460px;
+            padding: 40px 50px;
+            box-sizing: border-box;
+        }
+        
+        .tm-form-group { margin-bottom: 25px; }
+        
+        .tm-form-control {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #fff;
+            background-color: transparent;
+            background-clip: padding-box;
+            border: 0;
+            border-bottom: 1px solid white;
+        }
+        
+        .tm-form-control::-webkit-input-placeholder { color: white; } /* Edge */  
+        .tm-form-control:-ms-input-placeholder { color: white; } /* Internet Explorer 10-11 */  
+        .tm-form-control::placeholder { color: white; }
+        
+        .tm-btn-primary {
+            color: #099;
+            background-color: white;
+            border: 0;
+            padding: 12px 40px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            transition: all 0.3s ease; 
+        }
+        
+        .tm-btn-primary:hover {
+            color: white;
+            background-color: #099;
+        }
+        
+        .tm-align-right {
+            display: block;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        
+        .tm-mb-30 { margin-bottom: 30px; }
+        
     }
 }

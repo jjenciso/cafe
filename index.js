@@ -25,9 +25,9 @@ const openTab = (e, id) => {
   document.querySelector(`#${id}`).style.display = 'block';
   const tabLinks = document.querySelectorAll('.tab-link');
   tabLinks.forEach((tabLink) => {
-    tabLink.classList.remove('.active');
+    tabLink.classList.remove('active');
   })
-  e.currentTarget.classList.add('.active');
+  e.currentTarget.classList.add('active');
 }
 
 const initPage = () => {
@@ -45,9 +45,9 @@ const initPage = () => {
 const highlightMenu = (menuItem) => {
   const pageLinks = document.querySelectorAll('.page-links');
   pageLinks.forEach((pageLink) => {
-    pageLink.classList.remove('.active');
+    pageLink.classList.remove('active');
   })
-  menuItem.classList.add('.active');
+  menuItem.classList.add('active');
 }
 
 const showPage = (page) => {
@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   })
 
-  document.querySelector('.tab-link .active').click();
-})
+  document.querySelector('.tab-link.active').click();
+});
 
 
 //  VIDEO BUTTONS
